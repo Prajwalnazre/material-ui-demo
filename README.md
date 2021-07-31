@@ -1,7 +1,7 @@
-# material-ui-demo
+# Material UI Demo
 Since I am learning react, Material UI becomes crucial to implement awesome looking ui features. Through this project, I would like to explore some of the basic usage of this package
 
-
+<!-- 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->
