@@ -1,7 +1,7 @@
 import  React, { useState } from 'react';
 import clsx from 'clsx';
 
-import { Typography, AppBar, Button, Card, CardActions, CardContent, CardMedia, Cssbaseline, Grid, Container, Toolbar, CssBaseline } from '@material-ui/core';
+import { Typography, AppBar, Button, Card, CardActions, CardContent, CardMedia, Grid, Container, Toolbar, CssBaseline } from '@material-ui/core';
 import { CardHeader, Collapse, Avatar, IconButton } from '@material-ui/core';
 import { PhotoCamera } from '@material-ui/icons';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -11,13 +11,15 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import useStyles from './styles';
 
+import ImageCard from './components/ImageCards/ImageCard';
+
 const App = () => {
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
+    // const [expanded, setExpanded] = React.useState(false);
 
-    const handleClick = () => {
-        setExpanded(!expanded);
-    }
+    // const handleClick = () => {
+    //     setExpanded(!expanded);
+    // }
 
     return (
         <>
@@ -55,9 +57,16 @@ const App = () => {
                         </div>
                     </Container>
                     <div>
-                        <Grid Container spacing={2} justify="center" sm={12} md={6} lg={4}>
-                            <Grid item>
-                                <Card>
+                        <Grid container spacing={2} justify="center" 
+                        direction="row" 
+                        justifyContent="center"
+                        alignItems="flex-start"
+                        >
+                            <Grid item spacing={3} sm={12} md={6} lg={4}>
+                                <ImageCard />
+                            </Grid>
+                            <Grid item spacing={3} sm={12} md={6} lg={4}>
+                                {/* <Card>
                                     <CardHeader 
                                         avatar = {
                                             <Avatar aria-label="random_person" className={classes.avatar}>
@@ -118,9 +127,11 @@ const App = () => {
                                             </Typography>
                                         </CardContent>
                                     </Collapse>
-                                </Card>
+                                </Card> */}
+                                <ImageCard />
                             </Grid>
                         </Grid>
+                        
                     </div>
                 </div>
                 
